@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "python-meetup-demo"
+version = "0.0.0"
+description = ""
+authors = ["Matias Jokela <matias.jokela@wolt.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "*"
+pymongo = "*"
+jupyterlab = "*"
+pandas = "*"
+openai = "*"
+torch = "*"
+torchvision = "*"
+pillow = "*"
+gensim = "*"
+scipy = "1.12"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "*"
+black = "*"
+flake8 = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+
+[tool.mypy]
+plugins = ["pydantic.mypy"]
+disallow_any_unimported = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+strict_equality = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_return_any = true
+check_untyped_defs = true
+show_error_codes = true
