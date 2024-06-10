@@ -7,6 +7,7 @@ A starter kit for embeddings creation and vector search with Python and MongoDB.
 * Requirements:
   * [Poetry](https://python-poetry.org/)
   * Python 3.11+
+  * [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database)
 * Create a virtual environment and install the dependencies
 
 ```sh
